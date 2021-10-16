@@ -1,55 +1,64 @@
 /* imports */
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 /* font-family: 'Roboto', sans-serif; */
-
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
-
 /* font-family: "Nanum Gothic Coding", monospace; */
-
 * {
   margin: 1px;
   padding: 1px;
   font-family: "Roboto", sans-serif;
-  justify-content: center;
-}
-body {
-  background: rgb(9, 9, 121);
-  background: radial-gradient(circle, rgba(9, 9, 121, 1) 8%, rgba(0, 212, 255, 1) 100%) fixed;
-  display: flex;
-  flex-direction: column;
-}
-
-/* navbar */
-.logo {
-  background-color: rgba(0, 0, 0, 0.973);
-  filter: opacity(88%);
-  margin: 0% 0% 0% 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.836);
-  filter: opacity(80%);
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
   height: auto;
   width: 100%;
 }
 
-h1 {
+header h1 {
   background-color: transparent;
   font-size: 3.5em;
   font-family: "Nanum Gothic Coding", monospace;
 }
-/* para menu hamburguesa */
-.menu {
+
+header .contenedor {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+header .contenedor .logo {
+  -webkit-filter: contrast(500%);
+          filter: contrast(500%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+header .menu {
   position: relative;
   display: inline-block;
   margin: 0% 1% 0% 0%;
 }
-.sections {
+
+header .menu:hover .sections {
+  display: block;
+}
+
+header .menu .sections {
   display: none;
   position: absolute;
   background-color: whitesmoke;
@@ -58,11 +67,9 @@ h1 {
   z-index: 5;
   right: -30px;
 }
-.menu:hover .sections {
-  display: block;
-}
-.menu li,
-a {
+
+header .menu li,
+header .menu a {
   padding: 1.5%;
   list-style: none;
   text-decoration: none;
@@ -71,70 +78,71 @@ a {
   font-weight: 900;
   font-family: "Nanum Gothic Coding", monospace;
 }
-.menu a:hover {
+
+header .menu li:hover,
+header .menu a:hover {
   color: blue;
 }
-.fa-bars {
+
+header .menu .fa-bars {
   display: inline-block;
   cursor: pointer;
   color: black;
 }
-/* Cuerpo */
-h2 {
-  align-self: center;
-  justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  color: #f0a500;
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #090979;
+  background: linear-gradient(94deg, #090979 7%, #00d4ff 100%);
+}
+
+body h2 {
   font-family: "Nanum Gothic Coding", monospace;
-  font-weight: 900;
-  font-size: 2em;
+  color: orange;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5% 0% 5% 0%;
 }
 
-/* mediaqueries */
-
-@media (max-width: 1280px) {
-  h1 {
-    font-size: 2.8em;
-  }
-  .contenedor {
-    width: 15%;
-  }
+footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.973);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-@media (max-width: 768px) {
-  h1 {
+@media (max-width: 800px) {
+  header h1 {
     font-size: 1.8em;
   }
-
-  .contenedor {
-    width: 20%;
-  }
-  .logo {
-    width: 75%;
+  header .contenedor,
+  header .logo {
+    width: 150px;
   }
 }
 
 @media (max-width: 360px) {
-  .contenedor {
-    width: 15%;
-    margin-left: 5%;
+  header h1 {
+    font-size: 0.8em;
   }
-  .logo {
-    width: 110%;
+  header .contenedor,
+  header .logo {
+    width: 75px;
   }
-
-  h1 {
-    font-size: small;
+  h2 {
+    font-size: 0.7em;
+  }
+  footer {
+    font-size: 0.5em;
   }
 }
-
-/* footer */
-
-footer {
-  margin-top: 2%;
-  font-size: 20px;
-  color: whitesmoke;
-  font-weight: 900;
-  font-family: "Nanum Gothic Coding", monospace;
-}
+/*# sourceMappingURL=style.css.map */

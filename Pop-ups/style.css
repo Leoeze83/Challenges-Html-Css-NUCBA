@@ -201,6 +201,15 @@ button {
   margin-bottom: 70px;
 }
 
+/* footer */
+
+footer {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 900;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
 /* mediaqueries */
 
 @media (max-width: 1280px) {
@@ -240,15 +249,4 @@ button {
   h1 {
     font-size: small;
   }
-  /* .pop1 {
-  } */
-}
-
-/* footer */
-
-footer {
-  font-size: 20px;
-  color: whitesmoke;
-  font-weight: 900;
-  font-family: "Nanum Gothic Coding", monospace;
 }
