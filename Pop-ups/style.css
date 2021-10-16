@@ -6,12 +6,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
 
-font-family: "Nanum Gothic Coding", monospace;
+/* font-family: "Nanum Gothic Coding", monospace; */
 
 * {
-  margin: 5px;
-  padding: 1px;
+  margin: 0px;
+  padding: 0px;
   font-family: "Roboto", sans-serif;
+  justify-content: center;
 }
 body {
   background-color: #ffe53b;
@@ -23,6 +24,9 @@ body {
   background-color: rgba(0, 0, 0, 0.973);
   filter: opacity(88%);
   margin: 0% 0% 0% 5%;
+}
+.contenedor {
+  width: 18%;
 }
 
 header {
@@ -54,6 +58,9 @@ a {
 }
 .menu {
   margin: 0% 1% 0% 0%;
+}
+.fa-bars {
+  display: none;
 }
 
 /* pop-ups */
@@ -174,6 +181,49 @@ button {
   color: white;
   cursor: pointer;
   margin-bottom: 70px;
+}
+
+/* mediaqueries */
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  .contenedor {
+    width: 15%;
+  }
+  .fa-bars {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .logo,
+  .contenedor {
+    width: 75%;
+  }
+}
+@media (max-width: 360px) {
+  .contenedor {
+    width: 15%;
+    margin-left: 5%;
+  }
+  .logo {
+    width: 110%;
+  }
+  .fa-bars {
+    display: inline;
+  }
+  .sections {
+    display: none;
+  }
+  h1 {
+    font-size: small;
+  }
+  .pop1 {
+  }
 }
 
 /* footer */
