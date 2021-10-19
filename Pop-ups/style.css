@@ -116,10 +116,10 @@ i:hover {
   background-color: white;
   margin-bottom: 10%;
 }
-.pop1:hover {
+/* .pop1:hover {
   border-style: solid;
   border-color: rgb(77, 144, 219);
-}
+} */
 .pop1 img {
   background-color: transparent;
   width: 140px;
@@ -166,10 +166,10 @@ button {
   background-color: white;
   margin-bottom: 7%;
 }
-.pop2:hover {
+/* .pop2:hover {
   border-style: solid;
   border-color: rgb(77, 144, 219);
-}
+} */
 .pop2 img {
   background-color: transparent;
   width: 82px;
